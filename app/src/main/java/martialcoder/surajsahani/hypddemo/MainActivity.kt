@@ -13,8 +13,5 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
-    fun newtest(view: View) {
-        val intent = Intent(this@MainActivity,test::class.java)
-        startActivity(intent)
-    }
+
 }

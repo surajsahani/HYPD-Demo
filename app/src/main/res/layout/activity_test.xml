@@ -3,217 +3,48 @@
     android:layout_width="fill_parent"
     android:layout_height="100dip"
     tools:context=".test" >
-    <HorizontalScrollView
-        android:id="@+id/hsv"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:fillViewport="true"
-        android:measureAllChildren="false"
-        android:scrollbars="none" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <LinearLayout
-            android:id="@+id/innerLay"
-            android:layout_width="wrap_content"
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal" >
-            <LinearLayout
-                android:id="@+id/asthma_action_plan"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical" >
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_image_24" />
-                    <TextView
-                        android:layout_width="0.2dp"
-                        android:layout_height="fill_parent"
-                        android:layout_alignParentRight="true"
-                        android:background="@drawable/ic_baseline_image_24" />
-                </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/controlled_medication"
+                android:text="Custom Button1"/>
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical" >
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_image_24" />
-                    <TextView
-                        android:layout_width="0.2dp"
-                        android:layout_height="fill_parent"
-                        android:layout_alignParentRight="true"
-                        android:background="@drawable/ic_baseline_image_24" />
-                </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/as_needed_medication"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical" >
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal" >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_image_24" />
-                    <TextView
-                        android:layout_width="0.2dp"
-                        android:layout_height="fill_parent"
-                        android:layout_alignParentRight="true"
-                        android:background="@drawable/ic_baseline_image_24" />
-                </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/rescue_medication"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical" >
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_image_24" />
-                    <TextView
-                        android:layout_width="0.2dp"
-                        android:layout_height="fill_parent"
-                        android:layout_alignParentRight="true"
-                        android:background="@drawable/ic_baseline_image_24" />
-                </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/your_symptoms"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical" >
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_image_24" />
-                    <TextView
-                        android:layout_width="0.2dp"
-                        android:layout_height="fill_parent"
-                        android:layout_alignParentRight="true"
-                        android:background="@drawable/ic_baseline_image_24" />
-                </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/your_triggers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical" >
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_image_24" />
-                    <TextView
-                        android:layout_width="0.2dp"
-                        android:layout_height="fill_parent"
-                        android:layout_alignParentRight="true"
-                        android:background="@drawable/ic_baseline_image_24" />
-                </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/wheeze_rate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical" >
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_image_24" />
-                    <TextView
-                        android:layout_width="0.2dp"
-                        android:layout_height="fill_parent"
-                        android:layout_alignParentRight="true"
-                        android:background="@drawable/ic_baseline_image_24" />
-                </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/peak_flow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical" >
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_image_24" />
-                    <TextView
-                        android:layout_width="0.2dp"
-                        android:layout_height="fill_parent"
-                        android:layout_alignParentRight="true"
-                        android:background="@drawable/ic_baseline_image_24" />
-                </RelativeLayout>
-            </LinearLayout>
+                android:text="Custom Button2"/>
         </LinearLayout>
-    </HorizontalScrollView>
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="0.2dp"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/hsv"
-        android:background="@drawable/ic_baseline_image_24" />
-    <LinearLayout
-        android:id="@+id/prev"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:paddingLeft="5dip"
-        android:paddingRight="5dip"
-        android:descendantFocusability="blocksDescendants" >
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_baseline_image_24" />
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/next"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:paddingLeft="5dip"
-        android:paddingRight="5dip"
-        android:descendantFocusability="blocksDescendants" >
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_baseline_image_24" />
-    </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/buttons">
+            <!--Scrollable content here-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="test text"
+                    android:textSize="40dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="test text"
+                    android:textSize="40dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
 </RelativeLayout>
